@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namoro Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1><img src="img/par-perfeito-logo-removebg-preview (1).png" alt="Logo Namoro Online"></h1>
+            <nav>
+                <ul>
+                    <li><a href="#descricao">Serviço</a></li>
+                    <li><a href="#perfils">Perfis Destacados</a></li>
+                    <li><a href="#chat">Chat Rápido</a></li>
+                    <li><a href="#cadastro">Cadastro</a></li>
+                    <li><a href="#" id="theme-toggle">🌙</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Descrição do Serviço -->
+    <section id="descricao">
+        <div class="container">
+
+            <h2>Serviço de Chat de Namoro</h2>
+            <p>Encontre pessoas incríveis, converse e faça novas conexões em nosso chat de namoro seguro e confiável.
+                <img src="https://img.freepik.com/vetores-premium/aplicativo-movel-de-namoro-online-usando-servico-de-namoro-digital-para-encontrar-amante-ou-conceito-de-relacionamento_212586-290.jpg"
+                    alt="serviço de namoro">
+            </p>
+        </div>
+    </section>
+
+    <!-- Perfis Destacados -->
+    <section id="perfils">
+        <div class="container">
+            <h2>Perfis Destacados</h2>
+            <div class="profile-grid">
+                <!-- Perfil 1 -->
+                <div class="profile-card">
+                    <img src="https://p2.trrsf.com/image/fget/cf/1200/1200/middle/images.terra.com/2024/01/09/558908348-roridjmxknaunhygnl6mg2uo5m.jpg"
+                        alt="Perfil 1">
+                    <h3>Ana Clara</h3>
+                    <p>25 anos | "Amante de filmes e viagens!"</p>
+                </div>
+                <!-- Perfil 2 -->
+                <div class="profile-card">
+                    <img src="https://img.freepik.com/fotos-premium/retrato-de-uma-imagem-gerada-por-ia-de-homem_1025900-172.jpg"
+                        alt="Perfil 2">
+                    <h3>João Paulo</h3>
+                    <p>30 anos | "Amo esportes e culinária!"</p>
+                </div>
+                <!-- Perfil 3 -->
+                <div class="profile-card">
+                    <img src="https://img.criativodahora.com.br/2024/02/criativo-65c23fc98a3d6MDYvMDIvMjAyNCAxMWgxOA==.jpg"
+                        alt="Perfil 3">
+                    <h3>Maria Souza</h3>
+                    <p>28 anos | "Curiosa e apaixonada por arte!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Rápido -->
+    <section id="chat">
+        <div class="container">
+            <h2>Chat Rápido</h2>
+            <div class="chat-box">
+                <div class="message">
+                    <img src="https://img.freepik.com/vetores-premium/conceito-de-mensagem-de-chat-de-celular_39705-73.jpg"
+                        alt="chat">
+
+                    <strong>Ana Clara:</strong> Oi! Gostei do seu perfil, vamos conversar?
+                </div>
+                <div class="message">
+                    <strong>João Paulo:</strong> Oi Ana, claro! O que você gosta de fazer nas horas livres?
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Cadastro -->
+    <section id="cadastro">
+        <div class="container">
+            <h2>Cadastre-se Agora!</h2>
+            <form id="form-cadastro">
+                <input type="text" placeholder="Nome Completo" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Namoro Online. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
