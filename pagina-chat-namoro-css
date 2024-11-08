@@ -1,0 +1,135 @@
+/* Definindo a paleta de cores românticas */
+:root {
+    --cor-claro: #f9f9f9;
+    --cor-escuro: #2c2c2c;
+    --rosa: #d8214c;
+    --roxo: #a963c4;
+    --azul: #4db8ff;
+    --branco: #ffffff;
+    --preto: #333333;
+}
+
+/* Estilo para o modo claro */
+body {
+    background-color: var(--cor-claro);
+    color: var(--preto);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    background-color: var(--rosa);
+    color: var(--branco);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+section {
+    padding: 60px 0;
+}
+
+footer {
+    background-color: var(--rosa);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    background-color: var(--rosa);
+    color: var(--branco);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--roxo);
+}
+
+/* Modo Dark */
+body.dark {
+    background-color: var(--cor-escuro);
+    color: var(--branco);
+}
+
+body.dark header {
+    background-color: var(--roxo);
+}
+
+body.dark footer {
+    background-color: var(--roxo);
+}
+
+body.dark section {
+    background-color: #444;
+    color: var(--branco);
+}
+
+/* Animação de corações */
+.heart {
+    position: absolute;
+    animation: float 4s ease-in-out infinite;
+    opacity: 0.8;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(-100px) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) scale(0.5);
+        opacity: 0.8;
+    }
+}
+
+#theme-toggle {
+    cursor: pointer;
+}
+
+/* Ajustes para responsividade */
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.profile-card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .profile-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+}
